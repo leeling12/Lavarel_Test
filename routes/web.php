@@ -16,3 +16,13 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+/*
+Route::get('/about', function () {
+    return view('pages.about');
+});*/
+
+Route::get('/threads', 'ThreadsController@index');
+
+Route::get('/about', 'PagesController@about');
+Route::get('/test', 'PagesController@test');
